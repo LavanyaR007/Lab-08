@@ -1,0 +1,35 @@
+<h2>My orders</h2>
+
+<div ng-controller="orders_ctr">
+
+	<table class="table  bg-dark text-white table-striped table-bordered">
+	
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>QUANITY</th>
+				<th>PRICE</th>
+				<th>STATUS</th>
+				<th>DETAILS</th>
+			</tr>
+		
+		</thead>
+		
+		<tbody>
+		
+			<tr ng-repeat="order in orders">
+				<td>{{order.id}}</td>
+				<td>{{order.name}}</td>
+				<td>{{order.quantity}}</td>
+				<td>{{order.price}}</td>
+				<td>{{order.status}}</td>
+				<td><button style="height:25px;width:100px;">Deatils</button></td>
+			</tr>
+		
+		</tbody>
+		
+	
+	</table>
+
+</div>
